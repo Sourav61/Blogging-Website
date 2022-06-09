@@ -72,6 +72,6 @@ app.get("/posts/:post", function(req,res) {
   })
 })
 
-app.listen(3005, function () {
+app.listen(process.env.PORT || 3005, function () {
   console.log("Server started on port 3005");
 });
